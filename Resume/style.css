@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, section, footer {
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+a:hover {
+    color: #005fa3;
+}
+section h3 {
+    color: #1c4f89; 
+}
+section {
+    padding-bottom: 5px; 
+    margin-bottom: 5px;  
+    text-align: left;
+}
+
+/* Responsive Menu */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 10px;
+        background-color: #0077cc;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #005fa3;
+}
+
+/* Column Layout for Skills and Interests */
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.column {
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+    .column-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
